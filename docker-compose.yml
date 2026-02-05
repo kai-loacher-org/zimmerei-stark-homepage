@@ -1,16 +1,16 @@
-version: "3.8"
+version: '3'
 
 services:
   web:
     build: .
     container_name: zimmerei-stark-homepage
     restart: unless-stopped
-    expose:
-      - "3000"
+    networks:
+      - proxy
+    ports:
+      - "3000:3000"
     environment:
       - NODE_ENV=production
-    networks:
-      - traefik
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.stark.rule=Host(`stark.loacher.com`)"
@@ -19,5 +19,5 @@ services:
       - "traefik.http.services.stark.loadbalancer.server.port=3000"
 
 networks:
-  traefik:
+  proxy:
     external: true

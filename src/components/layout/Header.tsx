@@ -113,8 +113,8 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-0 top-20 bg-white z-40 overflow-y-auto animate-fade-in">
-            <div className="container-custom py-6">
+          <div className="lg:hidden fixed inset-0 bg-white z-40 overflow-y-auto animate-fade-in">
+            <div className="container-custom pt-24 pb-6">
               {mainNavigation.map((item) => (
                 <div key={item.label} className="border-b border-gray-100">
                   <Link

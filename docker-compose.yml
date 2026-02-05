@@ -5,12 +5,19 @@ services:
     build: .
     container_name: zimmerei-stark-homepage
     restart: unless-stopped
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     environment:
       - NODE_ENV=production
-    # Optional: Mit Traefik Labels für Reverse Proxy
-    # labels:
-    #   - "traefik.enable=true"
-    #   - "traefik.http.routers.stark.rule=Host(`stark.example.com`)"
-    #   - "traefik.http.services.stark.loadbalancer.server.port=3000"
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.stark.rule=Host(`stark.loacher.com`)"
+      - "traefik.http.routers.stark.entrypoints=websecure"
+      - "traefik.http.routers.stark.tls.certresolver=cloudflare"
+      - "traefik.http.services.stark.loadbalancer.server.port=3000"
+
+networks:
+  traefik:
+    external: true

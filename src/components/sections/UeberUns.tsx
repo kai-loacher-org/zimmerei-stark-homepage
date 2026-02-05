@@ -17,11 +17,12 @@ export default function UeberUns() {
           {/* Image Side */}
           <div className="relative">
             {/* Main Image */}
-            <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-secondary to-accent flex items-center justify-center shadow-xl">
-              <div className="text-center text-white/80 p-8">
-                <div className="text-6xl mb-4">📸</div>
-                <p className="text-lg">Firmengebäude / Team</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
+              <img 
+                src="/images/about/ueber-uns.jpg" 
+                alt="Über Zimmerei Stark"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Floating Card */}

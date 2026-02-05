@@ -62,15 +62,15 @@ export default function Hero() {
 
           {/* Image / Visual */}
           <div className="relative">
-            {/* Main Image Placeholder */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] bg-gradient-to-br from-secondary to-accent flex items-center justify-center">
-              <div className="text-center text-white/80 p-8">
-                <div className="text-6xl mb-4">📸</div>
-                <p className="text-lg">Hero-Bild</p>
-                <p className="text-sm opacity-70">Holzhaus / Team bei der Arbeit</p>
-              </div>
+            {/* Main Image */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+              <img 
+                src="/images/hero/holzhaus-1.jpg" 
+                alt="Modernes Holzhaus von Zimmerei Stark"
+                className="w-full h-full object-cover"
+              />
               {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
             </div>
 
             {/* Stats Card */}

@@ -32,11 +32,13 @@ export default function Referenzen() {
               href={projekt.href}
               className="group relative bg-white/5 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300"
             >
-              {/* Image Placeholder */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-secondary/50 to-accent/50 flex items-center justify-center">
-                <div className="text-4xl opacity-50 group-hover:scale-110 transition-transform">
-                  📸
-                </div>
+              {/* Project Image */}
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={`/images/projekte/projekt-${['holzhaus', 'modern', 'bau', 'interior'][featuredProjekte.indexOf(projekt) % 4]}.jpg`}
+                  alt={projekt.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
 
               {/* Content Overlay */}

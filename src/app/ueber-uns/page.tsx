@@ -87,11 +87,12 @@ export default function UeberUnsPage() {
                 </p>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-secondary to-accent flex items-center justify-center shadow-xl">
-              <div className="text-center text-white/80 p-8">
-                <div className="text-6xl mb-4">📸</div>
-                <p className="text-lg">Historisches Bild / Team</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden aspect-video shadow-xl">
+              <img 
+                src="/images/about/ueber-uns.jpg" 
+                alt="Zimmerei Stark Geschichte"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

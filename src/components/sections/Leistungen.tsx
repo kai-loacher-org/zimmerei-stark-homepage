@@ -27,11 +27,18 @@ export default function Leistungen() {
               href={leistung.href}
               className="group card overflow-hidden hover:-translate-y-2 transition-all duration-300"
             >
-              {/* Image Placeholder */}
-              <div className="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-5xl group-hover:scale-110 transition-transform duration-300">
-                  {leistung.icon}
-                </span>
+              {/* Image with Icon Overlay */}
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src="/images/leistungen/leistungen-hero.jpg"
+                  alt={leistung.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-secondary/80 flex items-center justify-center">
+                  <span className="text-5xl group-hover:scale-110 transition-transform duration-300">
+                    {leistung.icon}
+                  </span>
+                </div>
               </div>
 
               {/* Content */}

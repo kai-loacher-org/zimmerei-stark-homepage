@@ -73,11 +73,12 @@ export default function Karriere() {
 
           {/* Image / Visual */}
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden aspect-square bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-xl">
-              <div className="text-center text-white/80 p-8">
-                <div className="text-6xl mb-4">👷‍♂️</div>
-                <p className="text-lg">Team bei der Arbeit</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden aspect-square shadow-xl">
+              <img 
+                src="/images/team/karriere.jpg" 
+                alt="Karriere bei Zimmerei Stark"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Floating Stats */}

@@ -83,6 +83,7 @@ export const projekte: Projekt[] = [
     description: "Amt für Ernährung, Landwirtschaft und Forsten",
     category: "ObjektBau",
     location: "Ansbach",
+    imageUrl: "https://stark-inspiration.de/imgsrv/deDE/139083/1/3275758712831/LAYIMG/stark_aelf-ansbach_header.jpg",
     href: "/referenzen/projekte/aelf-ansbach",
   },
   {
@@ -91,6 +92,7 @@ export const projekte: Projekt[] = [
     description: "Moderne Energiehalle für die Landwirtschaftlichen Lehranstalten",
     category: "ObjektBau",
     location: "Triesdorf",
+    imageUrl: "https://stark-inspiration.de/imgsrv/deDE/139304/1/3275683121759/LAYIMG/stark_energiehalle-triesdorf_header.jpg",
     href: "/referenzen/projekte/energiehalle-triesdorf",
   },
   {
@@ -99,6 +101,7 @@ export const projekte: Projekt[] = [
     description: "Sanierung und Erweiterung des historischen Hotels",
     category: "Sanierung",
     location: "Oettingen",
+    imageUrl: "https://stark-inspiration.de/imgsrv/deDE/139104/1/3276884377117/LAYIMG/stark_hotel-krone-oettingen_header.jpg",
     href: "/referenzen/projekte/hotel-krone",
   },
   {
@@ -107,6 +110,7 @@ export const projekte: Projekt[] = [
     description: "Neubau eines modernen Kindergartens in Holzbauweise",
     category: "ObjektBau",
     location: "Auhausen",
+    imageUrl: "https://stark-inspiration.de/imgsrv/deDE/159024/1/3342816269216/LAYIMG/stark_kindergarten-auhausen_header.jpg",
     href: "/referenzen/projekte/kindergarten-auhausen",
   },
   {
@@ -115,6 +119,7 @@ export const projekte: Projekt[] = [
     description: "Mehrfamilienhaus-Projekt mit nachhaltigem Wohnkonzept",
     category: "KomplettHausbau",
     location: "Petersaurach",
+    imageUrl: "https://stark-inspiration.de/imgsrv/deDE/137831/1/3272587350071/LAYIMG/stark_lebensraum-petersaurach_header.jpg",
     href: "/referenzen/projekte/lebensraum-petersaurach",
   },
   {
@@ -123,15 +128,17 @@ export const projekte: Projekt[] = [
     description: "Innovatives Wohnprojekt mit flexiblen Grundrissen",
     category: "ModulBau",
     location: "Erlangen",
+    imageUrl: "https://stark-inspiration.de/imgsrv/deDE/139062/1/3330727868174/LAYIMG/stark_raumteiler-erlangen_header.jpg",
     href: "/referenzen/projekte/raumteiler-erlangen",
   },
   {
-    id: "regino-gymnasium",
-    title: "Regino-Gymnasium Bitburg-Prüm",
-    description: "Erweiterungsbau für das Gymnasium",
+    id: "kaeferholzhalle-auhausen",
+    title: "Käferholzhalle Auhausen",
+    description: "Nachhaltige Verwertung von Käferholz in moderner Halle",
     category: "ObjektBau",
-    location: "Bitburg-Prüm",
-    href: "/referenzen/projekte/regino-gymnasium",
+    location: "Auhausen",
+    imageUrl: "https://stark-inspiration.de/imgsrv/deDE/139537/1/3276187724437/LAYIMG/stark_kaeferholzhalle-auhausen_header.jpg",
+    href: "/referenzen/projekte/kaeferholzhalle-auhausen",
   },
   {
     id: "the-fireplace",
@@ -139,6 +146,7 @@ export const projekte: Projekt[] = [
     description: "Ausstellungsprojekt mit Star-Architekt Francis Kéré",
     category: "Spezial",
     location: "International",
+    imageUrl: "https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg",
     href: "/referenzen/projekte/the-fireplace",
   },
 ];

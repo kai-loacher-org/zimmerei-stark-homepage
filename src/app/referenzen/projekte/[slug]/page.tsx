@@ -24,12 +24,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-const projectImages = [
-  "/images/projekte/projekt-holzhaus.jpg",
-  "/images/projekte/projekt-modern.jpg",
-  "/images/projekte/projekt-bau.jpg",
-  "/images/projekte/projekt-interior.jpg",
-];
+// Fallback-Bild falls kein Projektbild vorhanden
+const FALLBACK_IMAGE = "https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg";
 
 export default function ProjektDetailPage({ params }: { params: { slug: string } }) {
   const projekt = projekte.find((p) => p.id === params.slug);
@@ -41,6 +37,9 @@ export default function ProjektDetailPage({ params }: { params: { slug: string }
   const currentIndex = projekte.findIndex((p) => p.id === params.slug);
   const prevProjekt = currentIndex > 0 ? projekte[currentIndex - 1] : null;
   const nextProjekt = currentIndex < projekte.length - 1 ? projekte[currentIndex + 1] : null;
+  
+  // Projektbild oder Fallback
+  const projectImage = projekt.imageUrl || FALLBACK_IMAGE;
 
   return (
     <>
@@ -48,7 +47,7 @@ export default function ProjektDetailPage({ params }: { params: { slug: string }
         title={projekt.title}
         subtitle={projekt.description}
         badge={projekt.category}
-        image={projectImages[currentIndex % projectImages.length]}
+        image={projectImage}
       />
 
       {/* Project Details */}
@@ -60,7 +59,7 @@ export default function ProjektDetailPage({ params }: { params: { slug: string }
               {/* Main Image */}
               <div className="rounded-2xl overflow-hidden mb-8">
                 <img
-                  src={projectImages[currentIndex % projectImages.length]}
+                  src={projectImage}
                   alt={projekt.title}
                   className="w-full aspect-video object-cover"
                 />
@@ -89,16 +88,19 @@ export default function ProjektDetailPage({ params }: { params: { slug: string }
                 </ul>
               </div>
 
-              {/* Gallery */}
-              <div className="mt-12">
-                <h3 className="text-xl font-semibold mb-6">Bildergalerie</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {projectImages.map((img, index) => (
-                    <div key={index} className="aspect-square rounded-lg overflow-hidden">
-                      <img src={img} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
-                    </div>
-                  ))}
-                </div>
+              {/* Info: Mehr Bilder auf der Original-Seite */}
+              <div className="mt-12 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                <p className="text-amber-800">
+                  Weitere Bilder zu diesem Projekt finden Sie auf{' '}
+                  <a 
+                    href={`https://stark-inspiration.de/referenzen/projekte/${projekt.id}/`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline font-medium hover:text-amber-900"
+                  >
+                    stark-inspiration.de
+                  </a>
+                </p>
               </div>
             </div>
 

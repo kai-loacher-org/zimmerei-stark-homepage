@@ -11,7 +11,7 @@ export const mainNavigation: NavItem[] = [
     children: [
       { label: "Firmengruppe STARK", href: "/ueber-uns/firmengruppe" },
       { label: "Historie", href: "/ueber-uns/historie" },
-      { label: "Qualitätsanspruch", href: "/ueber-uns/qualitaet" },
+      { label: "Qualitätsanspruch", href: "/ueber-uns/qualitaetsanspruch" },
       { label: "Musterhäuser", href: "/ueber-uns/musterhaeuser" },
       { label: "Ausstellungen", href: "/ueber-uns/ausstellungen" },
       { label: "Kontakt", href: "/kontakt" },

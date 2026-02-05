@@ -48,7 +48,7 @@ export default function ProjektePage() {
               >
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
-                    src={projekt.image || '/images/projekte/placeholder.jpg'}
+                    src={projekt.imageUrl || '/images/projekte/placeholder.jpg'}
                     alt={projekt.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"

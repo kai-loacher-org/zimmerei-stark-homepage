@@ -167,7 +167,7 @@ export default function KarrierePage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src="/images/team/team-arbeit.jpg" 
+                src="https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg" 
                 alt="Ausbildung bei Zimmerei Stark"
                 className="w-full h-full object-cover aspect-square"
               />

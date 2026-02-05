@@ -14,7 +14,7 @@ export default function EinfamilienhaeuserPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <Image
-          src="/images/efh-hero.jpg"
+          src="https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg"
           alt="Einfamilienhaus"
           fill
           className="object-cover"

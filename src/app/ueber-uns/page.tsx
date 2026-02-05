@@ -89,7 +89,7 @@ export default function UeberUnsPage() {
             </div>
             <div className="rounded-2xl overflow-hidden aspect-video shadow-xl">
               <img 
-                src="/images/about/ueber-uns.jpg" 
+                src="https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg" 
                 alt="Zimmerei Stark Geschichte"
                 className="w-full h-full object-cover"
               />

@@ -14,7 +14,7 @@ export default function AnbauErweiterungPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <Image
-          src="/images/modulbau-anbau-hero.jpg"
+          src="https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg"
           alt="Anbau & Erweiterung"
           fill
           className="object-cover"

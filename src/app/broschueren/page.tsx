@@ -52,7 +52,7 @@ export default function BroschuerenPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] flex items-center justify-center">
         <Image
-          src="/images/downloads-hero.jpg"
+          src="https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg"
           alt="Downloads"
           fill
           className="object-cover"

@@ -14,7 +14,7 @@ export default function MehrfamilienhaeuserPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <Image
-          src="/images/mfh-hero.jpg"
+          src="https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg"
           alt="Mehrfamilienhaus"
           fill
           className="object-cover"

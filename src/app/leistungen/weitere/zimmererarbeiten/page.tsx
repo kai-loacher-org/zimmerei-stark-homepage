@@ -12,7 +12,7 @@ export default function ZimmererarbeitenPage() {
   return (
     <div className="min-h-screen">
       <section className="relative h-[50vh] flex items-center justify-center">
-        <Image src="/images/zimmererarbeiten-hero.jpg" alt="Zimmererarbeiten" fill className="object-cover" priority />
+        <Image src="https://stark-inspiration.de/imgsrv/deDE/145773/1/3399734377180/teaserbox_bild_text/stark_leistungen.jpg" alt="Zimmererarbeiten" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Zimmererarbeiten</h1>

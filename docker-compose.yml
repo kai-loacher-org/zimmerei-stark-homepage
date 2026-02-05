@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: zimmerei-stark-homepage
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    # Optional: Mit Traefik Labels für Reverse Proxy
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.stark.rule=Host(`stark.example.com`)"
+    #   - "traefik.http.services.stark.loadbalancer.server.port=3000"

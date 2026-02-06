@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { mainNavigation } from "@/data/navigation";
 import { ChevronDown, Menu, X, Phone } from "lucide-react";
+import Logo from "@/components/ui/Logo";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,12 +46,13 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <img 
-              src="/images/logo-stark.svg" 
-              alt="Stark Inspiration" 
-              className={`h-14 w-auto transition-all ${isScrolled ? "brightness-0" : ""}`}
-            />
+          <Link 
+            href="/" 
+            className={`flex items-center transition-colors duration-300 ${
+              isScrolled ? "text-gray-900" : "text-white"
+            }`}
+          >
+            <Logo className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

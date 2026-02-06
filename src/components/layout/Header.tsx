@@ -46,9 +46,11 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className={`font-display text-2xl font-bold transition-colors ${isScrolled ? "text-primary" : "text-white"}`}>
-              STARK<span className="text-accent">.</span>
-            </span>
+            <img 
+              src="/images/logo-stark.svg" 
+              alt="Stark Inspiration" 
+              className={`h-14 w-auto transition-all ${isScrolled ? "brightness-0" : ""}`}
+            />
           </Link>
 
           {/* Desktop Navigation */}

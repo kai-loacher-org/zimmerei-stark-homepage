@@ -65,8 +65,8 @@ export default function Hero() {
             {/* Main Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
               <img 
-                src="/images/hero/holzhaus-1.jpg" 
-                alt="Modernes Holzhaus von Zimmerei Stark"
+                src="/images/hero/stark-1920-color.jpg" 
+                alt="Zimmerei Stark um 1920 - Gründungsjahre"
                 className="w-full h-full object-cover"
               />
               {/* Overlay gradient */}
